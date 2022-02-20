@@ -23,7 +23,7 @@ int main() {
   std::cout << "Enter a value for r ";
   std::cin >> r;
   std::cout << "nCr = ";
-  std::cout << nCr(n,r);
+  std::cout<<nCr(n,r);
   std::cout << std::endl;
   return factorial(n)/(factorial(r)*factorial(n-r));
   return 0;

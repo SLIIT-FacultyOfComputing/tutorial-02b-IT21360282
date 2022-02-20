@@ -18,6 +18,7 @@ int main()
         fac = fac * r;
     }
 
-    std::cout<<"Factorial of %d is %ld\n", no, fac;  
+    std::cout<<"Factorial of %d is %ld", no, fac;
+    std::cout<<std::endl;  
     return 0;
 }
