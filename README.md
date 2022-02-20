@@ -33,10 +33,11 @@ printf("Hello World") --> std::cout << "Hello World";
 void main(void) 
 {
     float cm, inches;
-    printf("Enter a length in cm : ");
-    scanf("%f",&cm);
+    std::cout << "Enter a length in cm : ";
+    std::cin >> "%f",&cm;
     inches = cm / 2.54;
-    printf("Length in inches is %f \n", inches);
+    std::cout << "Length in inches is %f ", inches;
+    std::cout << std::endl;
 }   
 ```
 
@@ -65,12 +66,12 @@ void main(void)
 {
    double salary, netSalary;
    int etype, otHrs, otRate;
-   printf("Enter Employee Type : ");
-   scanf("%d", &etype);
-   printf("Enter Salary  : ");
-   scanf("%f", &salary);
-   printf("Enter OtHrs : ");
-   scanf("%d", &otHrs); 
+   std::cout<<"Enter Employee Type : ";
+   std::cin>>"%d", &etype;
+   std::cout<<"Enter Salary  : ";
+   std::cin>>"%f", &salary;
+   std::cout<<"Enter OtHrs : ";
+   std::cin>>"%d", &otHrs; 
    
    switch (etype) {
       case 1 :
@@ -86,7 +87,7 @@ void main(void)
 
 
    netSalary = salary + otHrs* otRate;
-   printf("Net Salary is %f ", netSalary);
+   std::cout<<"Net Salary is %f ", netSalary;
 }
 ```
 
@@ -104,15 +105,15 @@ void main(void)
     int no;
     long fac;
 
-    printf("Enter a Number : ");
-    scanf("%d", &no);
+    std::cout<<"Enter a Number : ";
+    std::cin>>"%d", &no;
 
     fac = 1;
     for (int r=no; r >= 1; r--) {
         fac = fac * r;
     }
 
-    printf("Factorial of %d is %ld\n", no, fac);    
+    std::cout<<"Factorial of %d is %ld\n", no, fac;    
 }
 ```
  
@@ -147,6 +148,8 @@ int main() {
   std::cout << "nCr = ";
   std::cout << nCr(n,r);
   std::cout << std::endl;
+
+  return factorial(n)/(factorial(r)*factorial(n-r));
 }
 ```
 

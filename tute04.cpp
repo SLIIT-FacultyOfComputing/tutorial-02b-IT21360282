@@ -25,5 +25,6 @@ int main() {
   std::cout << "nCr = ";
   std::cout << nCr(n,r);
   std::cout << std::endl;
+  return factorial(n)/(factorial(r)*factorial(n-r));
   return 0;
 }
